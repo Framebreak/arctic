@@ -1,16 +1,14 @@
-# This is a sample Python script.
+def Hello_World(irgentwas:str, seperator:chr):
+    x = irgentwas.split(seperator)
+    print(x)
+    return x
 
-# Press Umschalt+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Strg+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+def Flicken(input:list, seperator:chr):
+    o = ""
+    for i in range(len(input)-1):
+        o = o + str(input[i]) + seperator
+    o+= input[len(input)-1]
+    return o
+liste = Hello_World('ach so geht das', "a")
+f = Flicken(liste, "a")
+print(f)
